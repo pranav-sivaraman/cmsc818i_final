@@ -92,39 +92,39 @@ if __name__ == "__main__":
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
     criterion = torch.nn.CrossEntropyLoss()
 
-# Training loop
-for iter in range(args.num_iters):
-    model.train()  # Set model to training mode
-    total_loss = 0
-    
-    # Training phase
-    for data1, data2, label in train_data:
-        data1, data2, label = data1.to(device), data2.to(device), torch.tensor([label]).to(device)
-
-        optimizer.zero_grad()
-        output = model(data1, data2)
-        loss = criterion(output, label)
-        loss.backward()
-        optimizer.step()
-        total_loss += loss.item()
-    
-    # Print the average loss for this iteration
-    print(f"Iter {iter+1}/{args.num_iters}, Loss: {total_loss / len(train_data)}")
-
-    # Print test accuracy every 10 iterations
-    if (iter + 1) % 10 == 0:
-        model.eval()  # Set model to evaluation mode
-        correct = 0
-        total = 0
+    # Training loop
+    for iter in range(args.num_iters):
+        model.train()  # Set model to training mode
+        total_loss = 0
         
-        with torch.no_grad():  # No need to compute gradients for testing
-            for data1, data2, label in test_data:
-                data1, data2, label = data1.to(device), data2.to(device), torch.tensor([label]).to(device)
-                output = model(data1, data2)
-                predicted = output.argmax(dim=1)  # Assuming classification task with `argmax` for prediction
-                total += label.size(0)
-                correct += (predicted == label).sum().item()
+        # Training phase
+        for data1, data2, label in train_data:
+            data1, data2, label = data1.to(device), data2.to(device), torch.tensor([label]).to(device)
 
-        accuracy = correct / total
-        print(f"Test Accuracy after Iter {iter+1}: {accuracy * 100:.2f}%")
+            optimizer.zero_grad()
+            output = model(data1, data2)
+            loss = criterion(output, label)
+            loss.backward()
+            optimizer.step()
+            total_loss += loss.item()
+        
+        # Print the average loss for this iteration
+        print(f"Iter {iter+1}/{args.num_iters}, Loss: {total_loss / len(train_data)}")
+
+        # Print test accuracy every 10 iterations
+        if (iter + 1) % 10 == 0:
+            model.eval()  # Set model to evaluation mode
+            correct = 0
+            total = 0
+            
+            with torch.no_grad():  # No need to compute gradients for testing
+                for data1, data2, label in test_data:
+                    data1, data2, label = data1.to(device), data2.to(device), torch.tensor([label]).to(device)
+                    output = model(data1, data2)
+                    predicted = output.argmax(dim=1)  # Assuming classification task with `argmax` for prediction
+                    total += label.size(0)
+                    correct += (predicted == label).sum().item()
+
+            accuracy = correct / total
+            print(f"Test Accuracy after Iter {iter+1}: {accuracy * 100:.2f}%")
 
