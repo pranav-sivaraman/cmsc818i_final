@@ -18,7 +18,7 @@ class GraphPairModel(torch.nn.Module):
         
         # MLP for prediction
         self.mlp = Sequential(
-            Linear(hidden_channels * 2, hidden_channels),
+            Linear(hidden_channels, hidden_channels),
             ReLU(),
             Linear(hidden_channels, out_channels)
         )
@@ -38,7 +38,9 @@ class GraphPairModel(torch.nn.Module):
         h2 = self._forward(data2)
        
         # Combine graph embeddings
-        h_pair = torch.cat([h1, h2], dim=1)        
+        
+        h_pair = h1 - h2
+        # h_pair = torch.cat([h1, h2], dim=1)
 
         # Predict label
         res = self.mlp(h_pair)
