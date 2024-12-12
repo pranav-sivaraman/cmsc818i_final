@@ -1,0 +1,317 @@
+2024-12-12 09:57:03,845 INFO    StreamThr :2042962 [internal.py:wandb_internal():85] W&B internal server running at pid: 2042962, started at: 2024-12-12 09:57:03.843817
+2024-12-12 09:57:03,846 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status
+2024-12-12 09:57:03,851 INFO    WriterThread:2042962 [datastore.py:open_for_write():87] open: /pscratch/sd/a/aranjan/818i-env/cmsc818i_final/new/wandb/offline-run-20241212_095703-0z7hmag5/run-0z7hmag5.wandb
+2024-12-12 09:57:03,873 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: run_start
+2024-12-12 09:57:03,924 ERROR   HandlerThread:2042962 [gpu.py:is_available():381] Error initializing NVML: Driver Not Loaded
+2024-12-12 09:57:03,926 DEBUG   HandlerThread:2042962 [system_info.py:__init__():26] System info init
+2024-12-12 09:57:03,926 DEBUG   HandlerThread:2042962 [system_info.py:__init__():41] System info init done
+2024-12-12 09:57:03,926 INFO    HandlerThread:2042962 [system_monitor.py:start():194] Starting system monitor
+2024-12-12 09:57:03,926 INFO    SystemMonitor:2042962 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-12-12 09:57:03,926 INFO    HandlerThread:2042962 [system_monitor.py:probe():214] Collecting system info
+2024-12-12 09:57:03,927 INFO    SystemMonitor:2042962 [interfaces.py:start():188] Started cpu monitoring
+2024-12-12 09:57:03,927 INFO    SystemMonitor:2042962 [interfaces.py:start():188] Started disk monitoring
+2024-12-12 09:57:03,928 INFO    SystemMonitor:2042962 [interfaces.py:start():188] Started memory monitoring
+2024-12-12 09:57:03,929 INFO    SystemMonitor:2042962 [interfaces.py:start():188] Started network monitoring
+2024-12-12 09:57:04,021 DEBUG   HandlerThread:2042962 [system_info.py:probe():152] Probing system
+2024-12-12 09:57:04,025 DEBUG   HandlerThread:2042962 [system_info.py:_probe_git():137] Probing git
+2024-12-12 09:57:04,048 DEBUG   HandlerThread:2042962 [system_info.py:_probe_git():145] Probing git done
+2024-12-12 09:57:04,048 DEBUG   HandlerThread:2042962 [system_info.py:probe():200] Probing system done
+2024-12-12 09:57:04,049 DEBUG   HandlerThread:2042962 [system_monitor.py:probe():223] {'os': 'Linux-5.14.21-150400.24.111_12.0.91-cray_shasta_c-x86_64-with-glibc2.31', 'python': '3.11.9', 'heartbeatAt': '2024-12-12T17:57:04.021820', 'startedAt': '2024-12-12T17:57:03.829062', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/pscratch/sd/a/aranjan/818i-env/cmsc818i_final/new/train.py', 'codePathLocal': 'train.py', 'codePath': 'new/train.py', 'git': {'remote': 'https://github.com/pranav-sivaraman/cmsc818i_final.git', 'commit': 'be620469000c80e1944229fa1ee141916acc2080'}, 'email': 'adi.k.ranjan@gmail.com', 'root': '/pscratch/sd/a/aranjan/818i-env/cmsc818i_final', 'host': 'nid004199', 'username': 'aranjan', 'executable': '/global/common/software/nersc9/pytorch/2.3.1/bin/python', 'cpu_count': 128, 'cpu_count_logical': 256, 'cpu_freq': {'current': 2452.3615390625, 'min': 1500.0, 'max': 2450.0}, 'cpu_freq_per_core': [{'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 3516.592, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}], 'disk': {'/': {'total': 251.61263275146484, 'used': 1.0697212219238281}}, 'memory': {'total': 503.22526931762695}}
+2024-12-12 09:57:04,049 INFO    HandlerThread:2042962 [system_monitor.py:probe():224] Finished collecting system info
+2024-12-12 09:57:04,049 INFO    HandlerThread:2042962 [system_monitor.py:probe():227] Publishing system info
+2024-12-12 09:57:04,050 DEBUG   HandlerThread:2042962 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-12-12 09:57:04,053 ERROR   HandlerThread:2042962 [system_info.py:_save_conda():223] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/global/common/software/nersc9/pytorch/2.3.1/lib/python3.11/site-packages/wandb/sdk/internal/system/system_info.py", line 216, in _save_conda
+    subprocess.call(
+  File "/global/common/software/nersc9/pytorch/2.3.1/lib/python3.11/subprocess.py", line 389, in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/common/software/nersc9/pytorch/2.3.1/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/global/common/software/nersc9/pytorch/2.3.1/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-12-12 09:57:04,056 DEBUG   HandlerThread:2042962 [system_info.py:_save_conda():224] Saving conda packages done
+2024-12-12 09:57:04,059 INFO    HandlerThread:2042962 [system_monitor.py:probe():229] Finished publishing system info
+2024-12-12 09:57:04,499 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: python_packages
+2024-12-12 09:57:08,855 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:57:08,856 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:57:13,860 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:57:13,862 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:57:17,371 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:57:18,864 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:57:18,865 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:57:23,867 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:57:23,868 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:57:28,872 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:57:28,873 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:57:29,329 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:57:33,876 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:57:33,882 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:57:38,884 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:57:38,885 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:57:41,081 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:57:43,887 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:57:43,890 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:57:48,893 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:57:48,896 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:57:52,798 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:57:53,899 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:57:53,901 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:57:58,903 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:57:58,904 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:58:03,907 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:58:03,908 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:58:03,930 DEBUG   SystemMonitor:2042962 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-12-12 09:58:04,231 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:58:08,910 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:58:08,911 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:58:13,914 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:58:13,915 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:58:16,172 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:58:18,919 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:58:18,920 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:58:23,921 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:58:23,924 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:58:27,751 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:58:28,927 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:58:28,928 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:58:33,929 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:58:33,931 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:58:38,934 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:58:38,935 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:58:39,307 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:58:43,937 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:58:43,938 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:58:48,940 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:58:48,940 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:58:50,751 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:58:53,943 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:58:53,944 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:58:58,947 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:58:58,947 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:59:02,852 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:59:03,949 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:59:03,949 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:59:08,883 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:59:08,953 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:59:08,955 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:59:13,957 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:59:13,958 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:59:18,960 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:59:18,961 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:59:20,212 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:59:23,964 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:59:23,967 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:59:28,969 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:59:28,969 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:59:31,698 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:59:33,970 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:59:33,971 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:59:38,973 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:59:38,973 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:59:43,080 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:59:43,976 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:59:43,977 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:59:48,980 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:59:48,980 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:59:53,982 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:59:53,983 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 09:59:54,832 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 09:59:58,985 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 09:59:58,986 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:00:03,987 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:00:03,988 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:00:06,675 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:00:08,990 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:00:08,990 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:00:13,992 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:00:13,992 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:00:18,445 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:00:18,994 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:00:18,995 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:00:23,997 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:00:23,997 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:00:29,000 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:00:29,000 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:00:29,491 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:00:34,002 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:00:34,003 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:00:39,005 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:00:39,005 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:00:40,808 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:00:44,007 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:00:44,008 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:00:49,010 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:00:49,011 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:00:51,583 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:00:54,014 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:00:54,014 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:00:58,295 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:00:59,016 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:00:59,016 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:01:04,018 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:01:04,020 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:01:09,023 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:01:09,024 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:01:10,188 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:01:14,026 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:01:14,026 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:01:19,028 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:01:19,028 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:01:21,620 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:01:24,030 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:01:24,031 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:01:29,033 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:01:29,034 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:01:32,903 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:01:34,036 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:01:34,038 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:01:39,039 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:01:39,040 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:01:44,043 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:01:44,043 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:01:44,106 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:01:49,047 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:01:49,048 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:01:54,050 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:01:54,050 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:01:55,345 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:01:59,052 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:01:59,053 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:02:04,054 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:02:04,056 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:02:06,573 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:02:09,058 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:02:09,059 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:02:14,060 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:02:14,061 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:02:17,688 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:02:19,065 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:02:19,066 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:02:24,068 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:02:24,068 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:02:29,062 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:02:29,070 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:02:29,070 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:02:34,072 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:02:34,075 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:02:39,077 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:02:39,078 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:02:40,924 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:02:44,082 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:02:44,083 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:02:49,090 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:02:49,092 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:02:53,062 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:02:53,461 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:02:54,094 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:02:54,094 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:02:59,096 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:02:59,098 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:03:00,331 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: partial_history
+2024-12-12 10:03:00,348 DEBUG   SenderThread:2042962 [sender.py:send():379] send: exit
+2024-12-12 10:03:00,348 INFO    SenderThread:2042962 [sender.py:send_exit():586] handling exit code: 0
+2024-12-12 10:03:00,349 INFO    SenderThread:2042962 [sender.py:send_exit():588] handling runtime: 356
+2024-12-12 10:03:00,350 INFO    SenderThread:2042962 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-12-12 10:03:00,350 INFO    SenderThread:2042962 [sender.py:send_exit():594] send defer
+2024-12-12 10:03:00,350 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,350 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 0
+2024-12-12 10:03:00,351 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,351 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-12-12 10:03:00,351 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 1
+2024-12-12 10:03:00,351 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,351 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 1
+2024-12-12 10:03:00,351 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,351 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-12-12 10:03:00,351 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 2
+2024-12-12 10:03:00,351 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,351 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 2
+2024-12-12 10:03:00,351 INFO    HandlerThread:2042962 [system_monitor.py:finish():203] Stopping system monitor
+2024-12-12 10:03:00,353 DEBUG   SystemMonitor:2042962 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-12-12 10:03:00,353 INFO    HandlerThread:2042962 [interfaces.py:finish():200] Joined cpu monitor
+2024-12-12 10:03:00,353 DEBUG   SystemMonitor:2042962 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-12-12 10:03:00,353 INFO    HandlerThread:2042962 [interfaces.py:finish():200] Joined disk monitor
+2024-12-12 10:03:00,356 INFO    HandlerThread:2042962 [interfaces.py:finish():200] Joined memory monitor
+2024-12-12 10:03:00,356 INFO    HandlerThread:2042962 [interfaces.py:finish():200] Joined network monitor
+2024-12-12 10:03:00,356 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,356 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-12-12 10:03:00,356 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 3
+2024-12-12 10:03:00,356 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,356 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 3
+2024-12-12 10:03:00,356 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,356 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-12-12 10:03:00,357 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 4
+2024-12-12 10:03:00,357 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,357 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 4
+2024-12-12 10:03:00,357 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,357 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-12-12 10:03:00,357 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 5
+2024-12-12 10:03:00,357 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,357 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 5
+2024-12-12 10:03:00,357 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,357 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-12-12 10:03:00,357 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 6
+2024-12-12 10:03:00,357 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,357 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 6
+2024-12-12 10:03:00,358 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,358 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-12-12 10:03:00,358 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 7
+2024-12-12 10:03:00,358 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: status_report
+2024-12-12 10:03:00,358 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,358 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: status_report
+2024-12-12 10:03:00,358 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 7
+2024-12-12 10:03:00,358 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,358 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-12-12 10:03:00,358 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 8
+2024-12-12 10:03:00,358 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,358 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 8
+2024-12-12 10:03:00,358 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,358 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-12-12 10:03:00,359 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 9
+2024-12-12 10:03:00,359 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,359 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 9
+2024-12-12 10:03:00,359 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,359 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-12-12 10:03:00,359 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 10
+2024-12-12 10:03:00,359 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,359 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 10
+2024-12-12 10:03:00,359 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,359 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-12-12 10:03:00,359 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 11
+2024-12-12 10:03:00,359 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,359 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 11
+2024-12-12 10:03:00,359 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,359 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-12-12 10:03:00,360 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 12
+2024-12-12 10:03:00,360 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,360 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 12
+2024-12-12 10:03:00,360 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,360 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-12-12 10:03:00,360 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 13
+2024-12-12 10:03:00,360 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,360 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 13
+2024-12-12 10:03:00,360 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,360 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-12-12 10:03:00,360 INFO    SenderThread:2042962 [sender.py:transition_state():614] send defer: 14
+2024-12-12 10:03:00,360 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: defer
+2024-12-12 10:03:00,360 DEBUG   SenderThread:2042962 [sender.py:send():379] send: final
+2024-12-12 10:03:00,360 INFO    HandlerThread:2042962 [handler.py:handle_request_defer():184] handle defer: 14
+2024-12-12 10:03:00,361 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: defer
+2024-12-12 10:03:00,361 INFO    SenderThread:2042962 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-12-12 10:03:00,361 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: poll_exit
+2024-12-12 10:03:00,361 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: poll_exit
+2024-12-12 10:03:00,362 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: server_info
+2024-12-12 10:03:00,362 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: server_info
+2024-12-12 10:03:00,362 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: poll_exit
+2024-12-12 10:03:00,362 DEBUG   SenderThread:2042962 [sender.py:send_request():406] send_request: poll_exit
+2024-12-12 10:03:00,362 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: get_summary
+2024-12-12 10:03:00,363 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: sampled_history
+2024-12-12 10:03:00,364 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: internal_messages
+2024-12-12 10:03:00,364 INFO    MainThread:2042962 [wandb_run.py:_footer_history_summary_info():4008] rendering history
+2024-12-12 10:03:00,365 INFO    MainThread:2042962 [wandb_run.py:_footer_history_summary_info():4040] rendering summary
+2024-12-12 10:03:00,365 DEBUG   HandlerThread:2042962 [handler.py:handle_request():158] handle_request: shutdown
+2024-12-12 10:03:00,365 INFO    HandlerThread:2042962 [handler.py:finish():882] shutting down handler
+2024-12-12 10:03:01,362 INFO    WriterThread:2042962 [datastore.py:close():296] close: /pscratch/sd/a/aranjan/818i-env/cmsc818i_final/new/wandb/offline-run-20241212_095703-0z7hmag5/run-0z7hmag5.wandb
+2024-12-12 10:03:01,362 INFO    SenderThread:2042962 [sender.py:finish():1608] shutting down sender

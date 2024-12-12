@@ -1,3 +1,4 @@
+import os
 import json
 import random
 from datasets import Dataset
@@ -5,6 +6,9 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trai
 from peft import LoraConfig, get_peft_model
 from sklearn.metrics import accuracy_score
 from torch.optim import AdamW
+
+
+os.environ["WANDB_DISABLED"] = "true"
 
 
 # Function to load and shuffle dataset
@@ -36,6 +40,41 @@ def tokenize_function(examples, tokenizer):
         max_length=128
     )
 
+"""
+def tokenize_function(examples, tokenizer):
+    # Tokenize both inputs separately
+    inputs_snippet = tokenizer(examples['snippet'], truncation=True, padding="max_length", max_length=128)
+    inputs_output = tokenizer(examples['output'], truncation=True, padding="max_length", max_length=128)
+
+    return {"input_ids": inputs_snippet['input_ids'], "input_ids_output": inputs_output['input_ids'],
+            "attention_mask": inputs_snippet['attention_mask'], "attention_mask_output": inputs_output['attention_mask']}
+"""
+
+
+"""
+class EmbeddingDifferenceModel(AutoModelForSequenceClassification):
+    def __init__(self, config):
+        super().__init__(config)
+        self.model = AutoModelForSequenceClassification.from_pretrained("roberta-base", config=config)
+
+    def forward(self, input_ids_snippet, attention_mask_snippet, input_ids_output, attention_mask_output):
+        # Get embeddings for both inputs
+        snippet_embeddings = self.model.roberta(input_ids_snippet, attention_mask=attention_mask_snippet)[0]
+        output_embeddings = self.model.roberta(input_ids_output, attention_mask=attention_mask_output)[0]
+        
+        # Compute the difference between embeddings (using the mean of the token embeddings)
+        snippet_embeddings = snippet_embeddings.mean(dim=1)  # Mean pooling over tokens
+        output_embeddings = output_embeddings.mean(dim=1)    # Mean pooling over tokens
+        
+        # Calculate the difference between the embeddings
+        embedding_diff = snippet_embeddings - output_embeddings
+        
+        # Pass the difference through the classifier
+        logits = self.model.classifier(embedding_diff)
+        
+        return logits
+"""
+
 
 # Function to compute accuracy
 def compute_metrics(p):
@@ -48,14 +87,15 @@ def compute_metrics(p):
 def initialize_model_and_tokenizer(model_name, categories):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=len(categories))
+    # model = EmbeddingDifferenceModel.from_pretrained("roberta-base", num_labels=len(categories))
     return model, tokenizer
 
 
 # Function to configure LoRA
 def configure_lora(model):
     lora_config = LoraConfig(
-        r=8,  # Low-rank matrix dimension
-        lora_alpha=32,  # Scaling factor
+        r=32,  # Low-rank matrix dimension
+        lora_alpha=64,  # Scaling factor
         target_modules=["self.query", "self.key", "self.value", "output.dense"],  # Modules to apply LoRA
         lora_dropout=0.1,
         bias="none",
@@ -68,7 +108,7 @@ def configure_lora(model):
 def initialize_training_args():
     return TrainingArguments(
         output_dir='./results',             # output directory
-        num_train_epochs=3,                 # number of training epochs
+        num_train_epochs=15,                 # number of training epochs
         per_device_train_batch_size=16,     # batch size for training
         per_device_eval_batch_size=64,      # batch size for evaluation
         evaluation_strategy="epoch",        # evaluate at the end of each epoch
@@ -108,6 +148,10 @@ def main():
 
     # Prepare for PyTorch
     tokenized_dataset = tokenized_dataset.rename_column("label", "labels")
+    """
+    tokenized_dataset.set_format("torch", columns=["input_ids_snippet", "attention_mask_snippet", 
+                                               "input_ids_output", "attention_mask_output", "labels"])
+    """
     tokenized_dataset.set_format("torch", columns=["input_ids", "attention_mask", "labels"])
 
     # Configure LoRA
